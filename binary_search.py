@@ -16,8 +16,7 @@ def binary_search(seq: List[int], find_element: int) -> int:
     seq.sort()
 
     while low <= high:
-        # Непонятно, как работает эта строчка, мы остановились на стр 27
-        mid = math.floor((low + high) / 2)
+        mid = (low + high) // 2
         guess = seq[mid]
 
         if guess == find_element:
